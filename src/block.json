@@ -1,0 +1,27 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"attributes": {
+		"leaderText": {
+			"meta": "_pp_leader_text_metafield",
+			"source": "meta",
+			"type": "string"
+		},
+		"ctaText": {
+			"meta": "_pp_cta_text_metafield",
+			"source": "meta",
+			"type": "string"
+		}
+	},
+	"name": "protect/password-protection-options",
+	"version": "1.0.0",
+	"title": "Password Protection Options",
+	"description": "Custom field options for extending core WordPress password protection",
+	"supports": {
+		"html": false
+	},
+	"textdomain": "password-protection-options",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css"
+}
