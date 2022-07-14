@@ -79,7 +79,7 @@ const Sidebar = ({ leaderText, ctaText }) => {
 					</BaseControl>
 					<BaseControl
 						id="leader-text"
-						label={__("Leader Text", "password-protection-options")}
+						label={__("Above The Form", "password-protection-options")}
 					>
 						<RichText
 							className="block__text"
@@ -102,7 +102,7 @@ const Sidebar = ({ leaderText, ctaText }) => {
 					</BaseControl>
 					<BaseControl
 						id="cta-text"
-						label={__("CTA Text", "password-protection-options")}
+						label={__("Below The Form", "password-protection-options")}
 					>
 						<RichText
 							className="block__text"

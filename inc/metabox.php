@@ -38,12 +38,12 @@ function pp_post_options_metabox_html( $post ) {
     wp_nonce_field( 'pp_update_post_metabox', 'pp_update_post_nonce' );
     ?>
     <p>
-        <label for="pp_leader_text_metafield"><?php esc_html_e( 'Leader Text', 'password-protection-options' ); ?></label>
+        <label for="pp_leader_text_metafield"><?php esc_html_e( 'Above The Form', 'password-protection-options' ); ?></label>
         <br />
         <textarea class="widefat" type="text" name="pp_leader_text_metafield" id="pp_leader_text_metafield"><?php echo $leader_value; ?></textarea>
     </p>
 	<p>
-        <label for="pp_cta_text_metafield"><?php esc_html_e( 'CTA Text', 'password-protection-options' ); ?></label>
+        <label for="pp_cta_text_metafield"><?php esc_html_e( 'Below The Form', 'password-protection-options' ); ?></label>
         <br />
         <textarea class="widefat" type="text" name="pp_cta_text_metafield" id="pp_cta_text_metafield"><?php echo $cta_value; ?></textarea>
     </p>
