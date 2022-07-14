@@ -41,7 +41,7 @@ add_action( 'init', __NAMESPACE__ . '\\password_protection_options_block_init' )
 
 function password_protect_options_plugin_register_post_meta() {
     register_post_meta(
-        'post',
+        '',
         '_pp_leader_text_metafield',
         [
             'show_in_rest'  => true,
@@ -55,7 +55,7 @@ function password_protect_options_plugin_register_post_meta() {
     );
 
 	register_post_meta(
-        'post',
+        '',
         '_pp_cta_text_metafield',
         [
             'show_in_rest'  => true,
