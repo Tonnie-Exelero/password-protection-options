@@ -5,7 +5,7 @@
  * Requires at least: 5.9
  * Requires PHP:      7.0
  * Version:           1.0.0
- * Author:            XWP, Tonnie Exelero
+ * Author:            XWP
  * License:           GPL-2.0-or-later
  * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
  * Text Domain:       password-protection-options
@@ -28,17 +28,11 @@ include_once MAIN_DIR . '/inc/metabox.php';
 include_once MAIN_DIR . '/inc/override-text.php';
 
 /**
- * Registers the block using the metadata loaded from the `block.json` file.
- * Behind the scenes, it registers also all assets so they can be enqueued
- * through the block editor in the corresponding context.
- *
- * @see https://developer.wordpress.org/reference/functions/register_block_type/
+ * Register custom post_meta to be used with overriding
+ * the_password_form.
+ * 
+ * @see https://developer.wordpress.org/reference/functions/register_post_meta/
  */
-function password_protection_options_block_init() {
-	register_block_type( MAIN_DIR . '/build' );
-}
-add_action( 'init', __NAMESPACE__ . '\\password_protection_options_block_init' );
-
 function password_protect_options_plugin_register_post_meta() {
     register_post_meta(
         '',
